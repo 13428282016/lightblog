@@ -1,0 +1,77 @@
+
+$font-size:14px;
+body
+{
+
+    font-size: $font-size;
+    line-height: 1.4;
+
+
+}
+
+p
+{
+  margin-top:10px;
+  margin-bottom: 10px;
+
+
+}
+
+div{
+
+
+  p{
+    color: red;
+    a{
+
+      color: #c7ffe9;
+    }
+  }
+}
+
+div{
+  color: #ff0000;
+   a{ u
+
+     color: #ff0000;
+     & a{
+       color: #ff0000;
+     }
+   }
+
+  &{
+    color: red;
+  }
+  a &{
+
+    color: #ff0000;
+
+  }
+
+
+
+
+}
+
+a{
+  font:1px solid{
+  color: #ffffff;
+  }
+
+
+}
+a{
+
+  font-size: 10px +20px ;
+}
+@mixin showMessageBefore($selector ,$message)
+{
+      #{$selector}:before {
+       content: $message;
+        }
+}
+@include showMessageBefore('div',"dsadasd"+dsddsd);
+
+
+
+

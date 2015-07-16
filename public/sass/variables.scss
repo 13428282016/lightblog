@@ -1,0 +1,19 @@
+//Base
+$border-radius-base:4px;
+
+//Form states and alters
+$state-success-bg:#ddf0d8;
+$state-success-border:darken($state-success-bg,5%);
+$state-success-text:#3c763d;
+//Alert
+$alert-border-radius:$border-radius-base;
+$alert-padding:15px;
+$alert-link-font-weight:bold;
+
+
+
+$alert-success-bg :$state-success-bg;
+$alert-success-text:$state-success-text;
+$alert-success-border:$state-success-border;
+
+
