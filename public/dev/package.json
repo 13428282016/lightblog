@@ -5,7 +5,7 @@
   "homepage": "http://wmj.wyuol.com",
   "license": "MIT",
   "description": "this is a light blog",
-  "repository":"",
+  "repository":"https://github.com/13428282016/lightblog.git",
   "keywords": [
     "css3",
     "less",
@@ -33,6 +33,10 @@
     "grunt-contrib-qunit": "~0.7.0",
     "grunt-contrib-uglify": "~0.9.1",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-csscomb": "^3.0.1"
+    "grunt-csscomb": "^3.0.1",
+    "grunt-exec": "0.4.6",
+    "grunt-contrib-compress":"0.13.0"
   }
+
+
 }
