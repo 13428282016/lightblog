@@ -38,6 +38,8 @@
             diff < 86400 &&( Math.floor(diff / 3600) + '小时前')
             ) ||(dayDiff + '天前');
 
+        //sass
+
 
     }
     window.DateFormat = DateFormat;

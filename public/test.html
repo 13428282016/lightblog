@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script  src="js/lib/require.js" ></script>
+  <script>
+      requirejs.config({
+
+          baseUrl:'/js',
+          paths:{
+              m1_a:'m1/a.min',
+              jquery:'lib/jquery',
+              m1:'m1',
+              m:'m1/test2.min'
+
+
+          },
+          shim:{
+              m1_a:{
+                  deps:['jquery'],
+                  exports:'m1_a',
+                  init:function(){
+                      alert();
+                  }
+              },
+              m:{
+                  deps:[],
+                  exports:'a'//这个导出是指导出函数里的window.a变量,如果不导出,require函数获取不到a的
+
+              }
+
+          }
+
+
+
+      });
+
+
+  </script>
+    <script>
+        require(['m1/test.min']);
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
